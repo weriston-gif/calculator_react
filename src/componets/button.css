@@ -1,0 +1,30 @@
+:root{
+    --bg-button: rgb(194, 192, 192);
+    --border-button: solid 1px #888;
+}
+
+.btnCalculator{
+    font-size: 1.4rem;
+    background-color: var(--bg-button);
+    border: none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+    outline: none;
+}
+
+.btnCalculator:active{
+    background-color: #ccc;
+}
+.btnCalculator.double{
+    grid-column: span 2;
+}
+.btnCalculator.triple{
+    grid-column: span 3;
+}
+.btnCalculator.operation{
+    background-color: rgb(255, 148, 9);
+    color: rgb(0, 0, 0);
+}
+.btnCalculator.operation:active{
+    background-color: rgb(142, 177, 159);
+}
